@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gran Vía Studio</title>
+    
+    <!-- Importing Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body, html {
+            height: 100%;
+            overflow: hidden; /* Prevents scrollbars */
+            background-color: #042544; /* Deep blue fallback color */
+        }
+
+        /* Fullscreen Video Background */
+        .video-container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0; /* .content has z-index: 1, so the video stays behind it without needing a negative value */
+            overflow: hidden;
+        }
+
+        .video-container video {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            transform: translate(-50%, -50%);
+            object-fit: cover;
+            filter: brightness(0.9); /* Slightly darkens video to make white text pop */
+        }
+
+        /* Centered Text Overlay */
+        .content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+            color: #ffffff;
+            position: relative;
+            z-index: 1;
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 5.5rem;
+            font-weight: 700;
+            letter-spacing: 0.02em;
+            text-shadow: 2px 4px 10px rgba(0, 0, 0, 0.3); /* Soft shadow for legibility */
+            margin-bottom: 0.2rem;
+        }
+
+        h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.2rem;
+            font-weight: 300;
+            letter-spacing: 0.6em; /* Creates the wide gap between letters */
+            text-transform: uppercase;
+            text-shadow: 1px 2px 6px rgba(0, 0, 0, 0.3);
+            /* margin-right offsets the trailing letter-spacing so it stays perfectly centered */
+            margin-right: -0.6em; 
+        }
+
+        .coming-soon {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 0.95rem;
+            font-weight: 300;
+            letter-spacing: 0.5em;
+            text-transform: uppercase;
+            text-shadow: 1px 2px 6px rgba(0, 0, 0, 0.3);
+            margin-right: -0.5em; /* offsets trailing letter-spacing, same trick as h2 */
+            margin-top: 2.5rem;
+            opacity: 0.85;
+        }
+
+        /* Responsive adjustments for mobile screens */
+        @media (max-width: 768px) {
+            h1 { font-size: 4rem; }
+            h2 { font-size: 1rem; }
+            .coming-soon { font-size: 0.8rem; margin-top: 2rem; }
+        }
+
+        @media (max-width: 480px) {
+            h1 { font-size: 3rem; }
+            h2 { 
+                font-size: 0.8rem;
+                letter-spacing: 0.4em;
+                margin-right: -0.4em;
+            }
+            .coming-soon {
+                font-size: 0.7rem;
+                letter-spacing: 0.35em;
+                margin-right: -0.35em;
+                margin-top: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Background Video -->
+    <div class="video-container">
+        <!-- Replace the "src" link with your own video file name once you export from Canva -->
+        <video autoplay loop muted playsinline>
+            <source src="waves.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <!-- Text Layer -->
+    <div class="content">
+        <h1>GRAN VÍA</h1>
+        <h2>Studio</h2>
+        <p class="coming-soon">Coming Soon</p>
+    </div>
+
+</body>
+</html>
