@@ -1,10 +1,12 @@
 # Gran Vía Studio
 
-> Gran Vía Studio iz Hrvatske nudi photobooth s trenutnim ispisom fotografija i najam pozadina za vjenčanja, rođendane, krštenja i poslovne događaje.
+> Gran Vía Studio je mala ekipa iz Dalmacije koja nudi photobooth (fotokutak, foto kabinu) s trenutnim ispisom fotografija i najam pozadina za vjenčanja, rođendane, krštenja i poslovne događaje.
 
 ## Stranice
 
-- [Gran Vía Studio](https://granviastudio.com.hr/): photobooth, najam pozadina, galerija i kontakt na jednoj stranici
+- [Gran Vía Studio](https://granviastudio.com.hr/): početna stranica s pregledom usluga, galerijom, informacijama o nama i kontaktom
+- [Photobooth](https://granviastudio.com.hr/photobooth/): što je uključeno, formati ispisa, za koje događaje i česta pitanja
+- [Najam pozadina](https://granviastudio.com.hr/najam-pozadina/): cvjetni luk, zavjesa s cvjetnim vijencem, neonski natpisi i zelenilo, s dostavom i postavom
 - [Instagram @granviastudio](https://www.instagram.com/granviastudio/): najnoviji događaji i nove pozadine
 
 ## Photobooth
@@ -22,8 +24,12 @@
 - Najam uz photobooth ili samostalno, za ceremoniju, doček gostiju ili kutak za fotografije
 - Dostava, postava i odvoz nakon događaja
 
+## Područje
+
+- Cijela Dalmacija: Zadar, Šibenik, Split, Trogir, Makarska, Dubrovnik i okolna mjesta
+- Po dogovoru i ostatak Hrvatske
+
 ## Kontakt
 
 - Telefon i WhatsApp: +385 99 651 3385
-- Područje: cijela Hrvatska
 - Upit: datum, mjesto i vrsta događaja putem obrasca na stranici ili WhatsAppa

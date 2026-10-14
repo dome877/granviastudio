@@ -20,8 +20,10 @@
   menu.addEventListener('click', function (e) { if (e.target.closest('a')) setMenu(false); });
 
   var hero = document.querySelector('.hero');
-  if (document.readyState === 'complete') hero.classList.add('is-loaded');
-  else window.addEventListener('load', function () { hero.classList.add('is-loaded'); });
+  if (hero) {
+    if (document.readyState === 'complete') hero.classList.add('is-loaded');
+    else window.addEventListener('load', function () { hero.classList.add('is-loaded'); });
+  }
 
   var slides = document.querySelectorAll('.hero__slide');
   var current = 0;
@@ -72,7 +74,7 @@
   });
 
   var form = document.getElementById('upit');
-  form.addEventListener('submit', function (e) {
+  if (form) form.addEventListener('submit', function (e) {
     e.preventDefault();
     var d = new FormData(form);
     var text = 'Pozdrav, zanima me ' + d.get('usluga').toLowerCase() + '.' +

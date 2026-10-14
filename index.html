@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Gran Vía Studio · Photobooth i najam pozadina za vjenčanja</title>
-  <meta name="description" content="Gran Vía Studio: photobooth s trenutnim ispisom fotografija i najam elegantnih pozadina za vjenčanja, rođendane i sve vaše događaje.">
+  <meta name="description" content="Photobooth (fotokutak) s ispisom fotografija za 12 sekundi i najam elegantnih pozadina za vjenčanja i događaje. Šibenik, Split, Zadar i cijela Dalmacija.">
   <link rel="canonical" href="https://granviastudio.com.hr/">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Gran Vía Studio">
@@ -39,14 +39,23 @@
         "image": "https://granviastudio.com.hr/img/hero-luk-ekipa.jpg",
         "telephone": "+385996513385",
         "address": { "@type": "PostalAddress", "addressCountry": "HR" },
-        "areaServed": { "@type": "Country", "name": "Hrvatska" },
+        "areaServed": [
+          { "@type": "AdministrativeArea", "name": "Dalmacija" },
+          { "@type": "City", "name": "Zadar" },
+          { "@type": "City", "name": "Šibenik" },
+          { "@type": "City", "name": "Split" },
+          { "@type": "City", "name": "Trogir" },
+          { "@type": "City", "name": "Makarska" },
+          { "@type": "City", "name": "Dubrovnik" },
+          { "@type": "Country", "name": "Hrvatska" }
+        ],
         "sameAs": ["https://www.instagram.com/granviastudio/"],
         "hasOfferCatalog": {
           "@type": "OfferCatalog",
           "name": "Usluge",
           "itemListElement": [
-            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Photobooth", "description": "Photobooth s ispisom fotografija za 12 sekundi, rekvizitima, knjigom dojmova i digitalnom galerijom." } },
-            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Najam pozadina", "description": "Najam cvjetnog luka, zavjese s cvjetnim vijencem, zelenila i neonskih natpisa, s dostavom i postavom." } }
+            { "@type": "Offer", "itemOffered": { "@id": "https://granviastudio.com.hr/photobooth/#service", "@type": "Service", "name": "Photobooth", "url": "https://granviastudio.com.hr/photobooth/", "description": "Photobooth s ispisom fotografija za 12 sekundi, rekvizitima, knjigom dojmova i digitalnom galerijom." } },
+            { "@type": "Offer", "itemOffered": { "@id": "https://granviastudio.com.hr/najam-pozadina/#service", "@type": "Service", "name": "Najam pozadina", "url": "https://granviastudio.com.hr/najam-pozadina/", "description": "Najam cvjetnog luka, zavjese s cvjetnim vijencem, zelenila i neonskih natpisa, s dostavom i postavom." } }
           ]
         }
       },
@@ -70,8 +79,8 @@
 
   <header class="site-header" id="top">
     <nav class="nav nav--left" aria-label="Glavni izbornik">
-      <a href="#photobooth">Photobooth</a>
-      <a href="#najam-pozadina">Najam pozadina</a>
+      <a href="photobooth/">Photobooth</a>
+      <a href="najam-pozadina/">Najam pozadina</a>
       <a href="#galerija">Galerija</a>
     </nav>
 
@@ -92,8 +101,8 @@
 
   <div class="mobile-menu" id="mobile-menu" hidden>
     <nav aria-label="Mobilni izbornik">
-      <a href="#photobooth">Photobooth</a>
-      <a href="#najam-pozadina">Najam pozadina</a>
+      <a href="photobooth/">Photobooth</a>
+      <a href="najam-pozadina/">Najam pozadina</a>
       <a href="#galerija">Galerija</a>
       <a href="#o-nama">O nama</a>
       <a href="#kontakt">Kontakt</a>
@@ -113,28 +122,28 @@
         <div class="hero__slide hero__slide--3"></div>
       </div>
       <div class="hero__content">
-        <h1 class="eyebrow eyebrow--light">Photobooth i najam pozadina za događaje</h1>
+        <h1 class="eyebrow eyebrow--light">Photobooth i najam pozadina u Dalmaciji</h1>
         <p class="hero__title">Trenuci koje<br><em>vrijedi čuvati</em></p>
         <div class="hero__actions">
           <a href="#kontakt" class="btn btn--light">Rezervirajte datum</a>
           <a href="#galerija" class="link-underline link-underline--light">Pogledajte galeriju</a>
         </div>
       </div>
-      <a href="#o-nama" class="hero__scroll" aria-label="Pomakni se dolje"><span></span></a>
+      <a href="#uvod" class="hero__scroll" aria-label="Pomakni se dolje"><span></span></a>
     </section>
 
-    <section class="intro section" id="o-nama">
+    <section class="intro section" id="uvod">
       <p class="eyebrow reveal">Gran Vía Studio</p>
       <p class="intro__lead reveal">Stvaramo kutke u kojima se gosti opuste, nasmiju i ponesu uspomenu sa sobom. Elegantan photobooth i pažljivo složene pozadine, za vjenčanja, rođendane, krštenja i poslovne događaje.</p>
       <img src="img/logo-stack.png" alt="" class="intro__mark reveal" width="779" height="265">
     </section>
 
     <section class="tiles" aria-label="Usluge">
-      <a href="#photobooth" class="tile reveal">
+      <a href="photobooth/" class="tile reveal">
         <div class="tile__img"><img width="900" height="600" src="img/photobooth-rekviziti-1-sm.webp" srcset="img/photobooth-rekviziti-1-sm.webp 900w, img/photobooth-rekviziti-1.webp 2000w" sizes="(max-width: 760px) 100vw, 50vw" alt="Gosti s rekvizitima ispred cvjetne zavjese" loading="lazy"></div>
         <div class="tile__label"><span class="tile__num">01</span><h2>Photobooth</h2><span class="link-underline">Saznajte više</span></div>
       </a>
-      <a href="#najam-pozadina" class="tile reveal">
+      <a href="najam-pozadina/" class="tile reveal">
         <div class="tile__img"><img width="507" height="900" src="img/backdrop-luk-mladenci-sm.webp" srcset="img/backdrop-luk-mladenci-sm.webp 900w, img/backdrop-luk-mladenci.webp 2000w" sizes="(max-width: 760px) 100vw, 50vw" alt="Mladenci ispod cvjetnog luka" loading="lazy"></div>
         <div class="tile__label"><span class="tile__num">02</span><h2>Najam pozadina</h2><span class="link-underline">Saznajte više</span></div>
       </a>
@@ -148,7 +157,7 @@
       <div class="split__text reveal">
         <p class="eyebrow">01 · Photobooth</p>
         <h2 class="h2">Fotografija u ruci,<br><em>za nekoliko sekundi</em></h2>
-        <p>Profesionalni fotoaparat, studijsko svjetlo i ispis na licu mjesta. Gosti se slikaju sami, a gotova fotografija izlazi iz printera za samo <strong>12 sekundi</strong>, s vašim imenima i datumom.</p>
+        <p>Naš fotokutak ima profesionalni fotoaparat, studijsko svjetlo i ispis na licu mjesta. Gosti se slikaju sami, a gotova fotografija izlazi iz printera za samo <strong>12 sekundi</strong>, s vašim imenima i datumom.</p>
         <ul class="features">
           <li><span>Ispis za 12 sekundi</span> odmah nakon fotografiranja</li>
           <li><span>Neograničen ispis</span> tijekom cijelog najma</li>
@@ -159,7 +168,10 @@
           <li><span>Digitalna galerija</span> svih fotografija nakon događaja</li>
           <li><span>Dostava, postava i asistent</span> tijekom događaja</li>
         </ul>
-        <a href="#kontakt" class="btn">Provjerite dostupnost</a>
+        <div class="split__actions">
+          <a href="#kontakt" class="btn">Provjerite dostupnost</a>
+          <a href="photobooth/" class="link-underline">Sve o photoboothu</a>
+        </div>
       </div>
     </section>
 
@@ -225,6 +237,7 @@
           <figcaption><h3>Zelenilo</h3><p>Pozadina od umjetnog zelenila, jednostavna i svježa podloga za fotografije.</p></figcaption>
         </figure>
       </div>
+      <p class="more reveal"><a href="najam-pozadina/" class="link-underline">Sve pozadine i najam</a></p>
     </section>
 
     <section class="steps section section--tint" aria-labelledby="steps-title">
@@ -264,6 +277,22 @@
       </div>
     </section>
 
+    <section class="about section section--tint" id="o-nama" aria-labelledby="o-nama-title">
+      <div class="section-head reveal">
+        <p class="eyebrow">O nama</p>
+        <h2 class="h2" id="o-nama-title">Ekipa koja <em>voli dobre zabave</em></h2>
+      </div>
+      <div class="about__text reveal">
+        <p>Gran Vía Studio je mala ekipa iz Dalmacije. Photobooth i pozadine radimo jer volimo trenutak kad se gosti opuste, zgrabe rekvizite i nasmiju pred kamerom.</p>
+        <p>Sve radimo sami: s vama složimo dizajn ispisa s imenima i datumom, dovezemo i postavimo opremu prije dolaska gostiju i ostajemo uz photobooth do kraja događaja. Nakon slavlja sve odnesemo i pošaljemo vam digitalnu galeriju.</p>
+      </div>
+      <div class="about__places reveal">
+        <p class="eyebrow">Gdje dolazimo</p>
+        <p class="about__cities">Zadar · Šibenik · Split · Trogir · Makarska · Dubrovnik</p>
+        <p class="about__note">i ostala mjesta u Dalmaciji, a po dogovoru i cijela Hrvatska</p>
+      </div>
+    </section>
+
     <section class="quote">
       <img src="img/backdrop-thats-amore-sm.webp" width="900" height="900" alt="Neonski natpis That's Amore na cvjetnom luku" class="quote__img reveal" loading="lazy">
       <blockquote class="reveal">
@@ -292,7 +321,7 @@
         <dl class="contact__list">
           <div><dt>Telefon</dt><dd><a href="tel:+385996513385">+385 99 651 3385</a></dd></div>
           <div><dt>WhatsApp</dt><dd><a href="https://wa.me/385996513385" target="_blank" rel="noopener">Pošaljite poruku</a></dd></div>
-          <div><dt>Područje</dt><dd>Hrvatska</dd></div>
+          <div><dt>Područje</dt><dd>Dalmacija i cijela Hrvatska</dd></div>
           <div><dt>Instagram</dt><dd><a href="https://www.instagram.com/granviastudio/" target="_blank" rel="noopener">@granviastudio</a></dd></div>
         </dl>
       </div>
@@ -327,8 +356,8 @@
       </div>
       <div class="footer__col">
         <h3>Usluge</h3>
-        <a href="#photobooth">Photobooth</a>
-        <a href="#najam-pozadina">Najam pozadina</a>
+        <a href="photobooth/">Photobooth</a>
+        <a href="najam-pozadina/">Najam pozadina</a>
         <a href="#galerija">Galerija</a>
       </div>
       <div class="footer__col">
@@ -347,7 +376,7 @@
     <img src="img/logo-line.png" alt="Gran Vía Studio" class="footer__logo" width="1600" height="187" loading="lazy">
     <div class="footer__bottom">
       <span>© <span id="year">2026</span> Gran Vía Studio</span>
-      <span>Photobooth i najam pozadina · Hrvatska</span>
+      <span>Photobooth i najam pozadina · Dalmacija</span>
       <a href="#top">Na vrh ↑</a>
     </div>
   </footer>

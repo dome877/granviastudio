@@ -188,7 +188,12 @@ body.menu-open .site-header { color: var(--ink); background: var(--paper); }
 .hero__slide--1 { background-image: url(../img/hero-luk-ekipa.webp); }
 .hero.is-loaded .hero__slide--2 { background-image: url(../img/backdrop-welcome.webp); }
 .hero.is-loaded .hero__slide--3 { background-image: url(../img/galerija-luk-djevojke.webp); }
+.hero--page { height: 78vh; height: 78svh; min-height: 520px; }
+.hero__slide--pb { background-image: url(../img/photobooth-rekviziti-1.webp); background-position: center 30%; }
+.hero__slide--bd { background-image: url(../img/galerija-luk-par.webp); background-position: 70% 40%; }
 @media (max-width: 760px) {
+  .hero__slide--pb { background-image: url(../img/photobooth-rekviziti-1-m.webp); }
+  .hero__slide--bd { background-image: url(../img/galerija-luk-par-m.webp); }
   .hero__slide--1 { background-image: url(../img/hero-luk-ekipa-m.webp); }
   .hero.is-loaded .hero__slide--2 { background-image: url(../img/backdrop-welcome-m.webp); }
   .hero.is-loaded .hero__slide--3 { background-image: url(../img/galerija-luk-djevojke-m.webp); }
@@ -258,6 +263,15 @@ body.menu-open .site-header { color: var(--ink); background: var(--paper); }
 .features { list-style: none; padding: 0; margin: 32px 0 44px; border-top: 1px solid var(--line); max-width: 520px; }
 .features li { padding: 14px 0; border-bottom: 1px solid var(--line); font-size: 14px; color: var(--muted); }
 .features span { color: var(--ink); font-weight: 500; margin-right: 6px; }
+.split__media--single { padding: 0; }
+.split__media--single > img:first-child { aspect-ratio: 4 / 5; object-position: center; }
+.split__media--land > img:first-child { aspect-ratio: 3 / 2; }
+.split__media--square > img:first-child { aspect-ratio: 1; }
+.bd-list .split + .split { padding-top: 0; }
+.intro__lead:last-child { margin-bottom: 0; }
+.split__actions { display: flex; gap: 32px; align-items: center; flex-wrap: wrap; }
+.more { text-align: center; margin: clamp(40px, 5vw, 64px) 0 0; }
+@media (min-width: 901px) { .split--rev .split__media { order: 2; } }
 
 .strips { overflow: hidden; }
 .strips__track {
@@ -398,6 +412,20 @@ body.menu-open .site-header { color: var(--ink); background: var(--paper); }
 }
 .footer__bottom a:hover { color: var(--ink); }
 
+.faq__list { max-width: 860px; margin: 0 auto; border-top: 1px solid var(--line); }
+.faq__list div { padding: 26px 0; border-bottom: 1px solid var(--line); }
+.faq__list dt { font-family: var(--serif); font-size: clamp(20px, 2vw, 24px); line-height: 1.3; margin: 0 0 8px; }
+.faq__list dd { margin: 0; color: var(--muted); max-width: 720px; }
+.faq__list a, .about a { text-decoration: underline; text-underline-offset: 3px; }
+.cta__actions { display: flex; gap: 32px; justify-content: center; align-items: center; flex-wrap: wrap; }
+
+.about__text { max-width: 720px; margin: 0 auto; text-align: center; color: var(--muted); }
+.about__text p { margin: 0 0 20px; }
+.about__places { max-width: 860px; margin: clamp(40px, 5vw, 64px) auto 0; text-align: center; border-top: 1px solid var(--line); padding-top: clamp(32px, 4vw, 48px); }
+.about__places p { margin: 0; }
+.about__cities { font-family: var(--serif); font-size: clamp(22px, 2.6vw, 34px); line-height: 1.4; margin: 0 0 12px !important; }
+.about__note { color: var(--muted); font-size: 14px; }
+
 .lightbox {
   position: fixed; inset: 0; z-index: 100;
   background: rgba(14, 12, 10, .94);
@@ -477,6 +505,8 @@ body.menu-open .site-header { color: var(--ink); background: var(--paper); }
   .menu-toggle, .mobile-cta { font-size: 11px; letter-spacing: .12em; }
   .hero .eyebrow { letter-spacing: .18em; font-size: 10px; }
   .hero__slide { background-position: 45% 40%; }
+  .hero--page .hero__slide { background-position: center 40%; }
+  .hero--page .hero__title { font-size: 38px; }
 }
 
 .site-footer { text-align: center; }

@@ -6,6 +6,18 @@
     <image:image><image:loc>https://granviastudio.com.hr/img/hero-luk-ekipa.webp</image:loc></image:image>
     <image:image><image:loc>https://granviastudio.com.hr/img/photobooth-postav.webp</image:loc></image:image>
     <image:image><image:loc>https://granviastudio.com.hr/img/backdrop-cvjetni-luk.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://granviastudio.com.hr/photobooth/</loc>
+    <lastmod>2026-10-14</lastmod>
+    <image:image><image:loc>https://granviastudio.com.hr/img/photobooth-rekviziti-1.webp</image:loc></image:image>
+    <image:image><image:loc>https://granviastudio.com.hr/img/photobooth-knjiga-dojmova.webp</image:loc></image:image>
+    <image:image><image:loc>https://granviastudio.com.hr/img/ispis-4x6-1.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://granviastudio.com.hr/najam-pozadina/</loc>
+    <lastmod>2026-10-14</lastmod>
+    <image:image><image:loc>https://granviastudio.com.hr/img/galerija-luk-par.webp</image:loc></image:image>
     <image:image><image:loc>https://granviastudio.com.hr/img/backdrop-welcome.webp</image:loc></image:image>
     <image:image><image:loc>https://granviastudio.com.hr/img/backdrop-zelenilo.webp</image:loc></image:image>
   </url>
