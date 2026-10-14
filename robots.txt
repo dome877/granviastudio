@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://granviastudio.com.hr/sitemap.xml
