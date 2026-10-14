@@ -20,10 +20,10 @@
   <meta name="theme-color" content="#f6f2ec">
   <link rel="icon" type="image/png" href="img/favicon.png">
   <link rel="apple-touch-icon" href="img/favicon.png">
-  <link rel="preload" as="image" href="img/hero-luk-ekipa.jpg" fetchpriority="high">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="img/hero-luk-ekipa.webp" media="(min-width: 761px)" fetchpriority="high">
+  <link rel="preload" as="image" href="img/hero-luk-ekipa-m.webp" media="(max-width: 760px)" fetchpriority="high">
+  <link rel="preload" as="font" type="font/woff2" href="fonts/playfair-display-latin.woff2" crossorigin>
+  <link rel="preload" as="font" type="font/woff2" href="fonts/montserrat-latin.woff2" crossorigin>
   <link rel="stylesheet" href="css/style.css">
   <script type="application/ld+json">
   {
@@ -38,6 +38,7 @@
         "logo": "https://granviastudio.com.hr/img/logo-stack.png",
         "image": "https://granviastudio.com.hr/img/hero-luk-ekipa.jpg",
         "telephone": "+385996513385",
+        "address": { "@type": "PostalAddress", "addressCountry": "HR" },
         "areaServed": { "@type": "Country", "name": "Hrvatska" },
         "sameAs": ["https://www.instagram.com/granviastudio/"],
         "hasOfferCatalog": {
@@ -107,9 +108,9 @@
 
     <section class="hero" aria-label="Uvod">
       <div class="hero__slides" aria-hidden="true">
-        <div class="hero__slide is-active" style="background-image:url(img/hero-luk-ekipa.jpg)"></div>
-        <div class="hero__slide" style="background-image:url(img/backdrop-welcome.jpg)"></div>
-        <div class="hero__slide" style="background-image:url(img/galerija-luk-djevojke.jpg)"></div>
+        <div class="hero__slide hero__slide--1 is-active"></div>
+        <div class="hero__slide hero__slide--2"></div>
+        <div class="hero__slide hero__slide--3"></div>
       </div>
       <div class="hero__content">
         <h1 class="eyebrow eyebrow--light">Photobooth i najam pozadina za događaje</h1>
@@ -130,19 +131,19 @@
 
     <section class="tiles" aria-label="Usluge">
       <a href="#photobooth" class="tile reveal">
-        <div class="tile__img"><img width="900" height="600" src="img/photobooth-rekviziti-1-sm.jpg" srcset="img/photobooth-rekviziti-1-sm.jpg 900w, img/photobooth-rekviziti-1.jpg 2000w" sizes="(max-width: 760px) 100vw, 50vw" alt="Gosti s rekvizitima ispred cvjetne zavjese" loading="lazy"></div>
+        <div class="tile__img"><img width="900" height="600" src="img/photobooth-rekviziti-1-sm.webp" srcset="img/photobooth-rekviziti-1-sm.webp 900w, img/photobooth-rekviziti-1.webp 2000w" sizes="(max-width: 760px) 100vw, 50vw" alt="Gosti s rekvizitima ispred cvjetne zavjese" loading="lazy"></div>
         <div class="tile__label"><span class="tile__num">01</span><h2>Photobooth</h2><span class="link-underline">Saznajte više</span></div>
       </a>
       <a href="#najam-pozadina" class="tile reveal">
-        <div class="tile__img"><img width="507" height="900" src="img/backdrop-luk-mladenci-sm.jpg" srcset="img/backdrop-luk-mladenci-sm.jpg 900w, img/backdrop-luk-mladenci.jpg 2000w" sizes="(max-width: 760px) 100vw, 50vw" alt="Mladenci ispod cvjetnog luka" loading="lazy"></div>
+        <div class="tile__img"><img width="507" height="900" src="img/backdrop-luk-mladenci-sm.webp" srcset="img/backdrop-luk-mladenci-sm.webp 900w, img/backdrop-luk-mladenci.webp 2000w" sizes="(max-width: 760px) 100vw, 50vw" alt="Mladenci ispod cvjetnog luka" loading="lazy"></div>
         <div class="tile__label"><span class="tile__num">02</span><h2>Najam pozadina</h2><span class="link-underline">Saznajte više</span></div>
       </a>
     </section>
 
     <section class="split section" id="photobooth">
       <div class="split__media reveal">
-        <img width="507" height="900" src="img/photobooth-postav-sm.jpg" srcset="img/photobooth-postav-sm.jpg 900w, img/photobooth-postav.jpg 2000w" sizes="(max-width: 900px) 100vw, 45vw" alt="Photobooth postavljen u dvorani uz bijelu zavjesu i cvijeće" loading="lazy">
-        <img width="415" height="900" src="img/photobooth-knjiga-dojmova-sm.jpg" class="split__inset" alt="Knjiga dojmova s nalijepljenim fotografijama" loading="lazy">
+        <img width="507" height="900" src="img/photobooth-postav-sm.webp" srcset="img/photobooth-postav-sm.webp 900w, img/photobooth-postav.webp 2000w" sizes="(max-width: 900px) 100vw, 45vw" alt="Photobooth postavljen u dvorani uz bijelu zavjesu i cvijeće" loading="lazy">
+        <img width="415" height="900" src="img/photobooth-knjiga-dojmova-sm.webp" class="split__inset" alt="Knjiga dojmova s nalijepljenim fotografijama" loading="lazy">
       </div>
       <div class="split__text reveal">
         <p class="eyebrow">01 · Photobooth</p>
@@ -168,13 +169,13 @@
         <h2 class="h2" id="strips-title">Uspomena koju <em>gosti nose sa sobom</em></h2>
       </div>
       <div class="strips__track" tabindex="0" aria-label="Primjeri foto traka">
-        <img src="img/traka-1.jpg" alt="Foto traka s gostima i natpisima" loading="lazy" width="400" height="1200">
-        <img src="img/traka-8.jpg" alt="Foto traka para ispod cvjetnog luka" loading="lazy" width="400" height="1200">
-        <img src="img/traka-2.jpg" alt="Foto traka dviju prijateljica" loading="lazy" width="400" height="1200">
-        <img src="img/traka-3.jpg" alt="Foto traka s mladenkom" loading="lazy" width="400" height="1200">
-        <img src="img/traka-9.jpg" alt="Foto traka dvojice prijatelja ispod cvjetnog luka" loading="lazy" width="400" height="1200">
-        <img src="img/traka-5.jpg" alt="Foto traka s mladoženjom" loading="lazy" width="400" height="1200">
-        <img src="img/traka-7.jpg" alt="Foto traka s policijskom kapom" loading="lazy" width="400" height="1200">
+        <img src="img/traka-1.webp" alt="Foto traka s gostima i natpisima" loading="lazy" width="400" height="1200">
+        <img src="img/traka-8.webp" alt="Foto traka para ispod cvjetnog luka" loading="lazy" width="400" height="1200">
+        <img src="img/traka-2.webp" alt="Foto traka dviju prijateljica" loading="lazy" width="400" height="1200">
+        <img src="img/traka-3.webp" alt="Foto traka s mladenkom" loading="lazy" width="400" height="1200">
+        <img src="img/traka-9.webp" alt="Foto traka dvojice prijatelja ispod cvjetnog luka" loading="lazy" width="400" height="1200">
+        <img src="img/traka-5.webp" alt="Foto traka s mladoženjom" loading="lazy" width="400" height="1200">
+        <img src="img/traka-7.webp" alt="Foto traka s policijskom kapom" loading="lazy" width="400" height="1200">
       </div>
 
       <div class="formats">
@@ -189,8 +190,8 @@
           </dl>
         </div>
         <div class="formats__prints reveal">
-          <img src="img/ispis-4x6-1.jpg" alt="Primjer 4×6 ispisa s gostima i natpisima" loading="lazy" width="1200" height="1800">
-          <img src="img/ispis-4x6-2.jpg" alt="Primjer 4×6 ispisa s večernjeg događaja" loading="lazy" width="1200" height="1800">
+          <img src="img/ispis-4x6-1-sm.webp" srcset="img/ispis-4x6-1-sm.webp 600w, img/ispis-4x6-1.webp 1200w" sizes="(max-width: 900px) 46vw, 23vw" alt="Primjer 4×6 ispisa s gostima i natpisima" loading="lazy" width="1200" height="1800">
+          <img src="img/ispis-4x6-2-sm.webp" srcset="img/ispis-4x6-2-sm.webp 600w, img/ispis-4x6-2.webp 1200w" sizes="(max-width: 900px) 46vw, 23vw" alt="Primjer 4×6 ispisa s večernjeg događaja" loading="lazy" width="1200" height="1800">
         </div>
       </div>
     </section>
@@ -204,23 +205,23 @@
 
       <div class="bd-grid">
         <figure class="bd bd--tall reveal">
-          <img width="600" height="900" src="img/backdrop-cvjetni-luk-sm.jpg" srcset="img/backdrop-cvjetni-luk-sm.jpg 900w, img/backdrop-cvjetni-luk.jpg 2000w" sizes="(max-width: 760px) 100vw, 33vw" alt="Cvjetni luk s bijelim tekstilom i svjetlećim natpisom That's Amore" loading="lazy">
+          <img width="600" height="900" src="img/backdrop-cvjetni-luk-sm.webp" srcset="img/backdrop-cvjetni-luk-sm.webp 900w, img/backdrop-cvjetni-luk.webp 2000w" sizes="(max-width: 760px) 100vw, 33vw" alt="Cvjetni luk s bijelim tekstilom i svjetlećim natpisom That's Amore" loading="lazy">
           <figcaption><h3>Cvjetni luk</h3><p>Pastelne ruže, bijeli tekstil i neonski natpis po izboru.</p></figcaption>
         </figure>
         <figure class="bd reveal">
-          <img width="900" height="600" src="img/backdrop-welcome-sm.jpg" srcset="img/backdrop-welcome-sm.jpg 900w, img/backdrop-welcome.jpg 2000w" sizes="(max-width: 760px) 100vw, 33vw" alt="Bijela zavjesa s cvjetnim vijencem i natpisom Welcome" loading="lazy">
+          <img width="900" height="600" src="img/backdrop-welcome-sm.webp" srcset="img/backdrop-welcome-sm.webp 900w, img/backdrop-welcome.webp 2000w" sizes="(max-width: 760px) 100vw, 33vw" alt="Bijela zavjesa s cvjetnim vijencem i natpisom Welcome" loading="lazy">
           <figcaption><h3>Zavjesa s cvjetnim vijencem</h3><p>Mekana krem zavjesa i bogat cvjetni vijenac, idealna uz photobooth.</p></figcaption>
         </figure>
         <figure class="bd reveal">
-          <img width="900" height="900" src="img/backdrop-thats-amore-sm.jpg" srcset="img/backdrop-thats-amore-sm.jpg 900w, img/backdrop-thats-amore.jpg 2000w" sizes="(max-width: 760px) 100vw, 33vw" alt="Neonski natpis That's Amore na cvjetnoj pozadini noću" loading="lazy">
+          <img width="900" height="900" src="img/backdrop-thats-amore-sm.webp" srcset="img/backdrop-thats-amore-sm.webp 900w, img/backdrop-thats-amore.webp 2000w" sizes="(max-width: 760px) 100vw, 33vw" alt="Neonski natpis That's Amore na cvjetnoj pozadini noću" loading="lazy">
           <figcaption><h3>Neonski natpisi</h3><p>That's Amore, Better Together, Welcome i drugi, za večernju atmosferu.</p></figcaption>
         </figure>
         <figure class="bd bd--tall reveal">
-          <img width="507" height="900" src="img/backdrop-zavjesa-cvijece-sm.jpg" srcset="img/backdrop-zavjesa-cvijece-sm.jpg 900w, img/backdrop-zavjesa-cvijece.jpg 2000w" sizes="(max-width: 760px) 100vw, 33vw" alt="Gosti ispred bijele zavjese s cvijećem u dvorani" loading="lazy">
+          <img width="507" height="900" src="img/backdrop-zavjesa-cvijece-sm.webp" srcset="img/backdrop-zavjesa-cvijece-sm.webp 900w, img/backdrop-zavjesa-cvijece.webp 2000w" sizes="(max-width: 760px) 100vw, 33vw" alt="Gosti ispred bijele zavjese s cvijećem u dvorani" loading="lazy">
           <figcaption><h3>Za unutarnje prostore</h3><p>Prilagođavamo se svakoj dvorani, restoranu ili vrtu.</p></figcaption>
         </figure>
         <figure class="bd bd--wide reveal">
-          <img width="675" height="900" src="img/backdrop-zelenilo-sm.jpg" srcset="img/backdrop-zelenilo-sm.jpg 900w, img/backdrop-zelenilo.jpg 2000w" sizes="(max-width: 760px) 100vw, 66vw" alt="Zid od umjetnog zelenila s tulipanima i lampionima na panjevima" loading="lazy">
+          <img width="675" height="900" src="img/backdrop-zelenilo-sm.webp" srcset="img/backdrop-zelenilo-sm.webp 900w, img/backdrop-zelenilo.webp 2000w" sizes="(max-width: 760px) 100vw, 66vw" alt="Zid od umjetnog zelenila s tulipanima i lampionima na panjevima" loading="lazy">
           <figcaption><h3>Zelenilo</h3><p>Pozadina od umjetnog zelenila, jednostavna i svježa podloga za fotografije.</p></figcaption>
         </figure>
       </div>
@@ -245,26 +246,26 @@
         <h2 class="h2">S naših <em>događaja</em></h2>
       </div>
       <div class="masonry">
-        <a href="img/galerija-luk-ekipa-2.jpg" class="m-item reveal"><img width="900" height="600" src="img/galerija-luk-ekipa-2-sm.jpg" alt="Veselo društvo ispod cvjetnog luka" loading="lazy"></a>
-        <a href="img/galerija-rekviziti-2.jpg" class="m-item reveal"><img width="900" height="600" src="img/galerija-rekviziti-2-sm.jpg" alt="Prijatelji s natpisima i naočalama" loading="lazy"></a>
-        <a href="img/galerija-luk-par.jpg" class="m-item reveal"><img width="900" height="600" src="img/galerija-luk-par-sm.jpg" alt="Par u zagrljaju ispod luka" loading="lazy"></a>
-        <a href="img/galerija-mladozenja.jpg" class="m-item reveal"><img width="900" height="600" src="img/galerija-mladozenja-sm.jpg" alt="Mladoženja s prijateljima" loading="lazy"></a>
-        <a href="img/galerija-glazbenici.jpg" class="m-item reveal"><img width="900" height="600" src="img/galerija-glazbenici-sm.jpg" alt="Glazbenici s instrumentima ispod luka" loading="lazy"></a>
-        <a href="img/galerija-rekviziti-3.jpg" class="m-item reveal"><img width="900" height="600" src="img/galerija-rekviziti-3-sm.jpg" alt="Četvero prijatelja s rekvizitima" loading="lazy"></a>
-        <a href="img/galerija-luk-mladenka.jpg" class="m-item reveal"><img width="900" height="600" src="img/galerija-luk-mladenka-sm.jpg" alt="Mladenka s prijateljima ispod luka" loading="lazy"></a>
-        <a href="img/galerija-obitelj.jpg" class="m-item reveal"><img width="900" height="600" src="img/galerija-obitelj-sm.jpg" alt="Obitelj s natpisom Štaje tuje" loading="lazy"></a>
-        <a href="img/galerija-rekviziti-4.jpg" class="m-item reveal"><img width="900" height="600" src="img/galerija-rekviziti-4-sm.jpg" alt="Gosti s klapom i šeširima" loading="lazy"></a>
-        <a href="img/galerija-luk-trojka.jpg" class="m-item reveal"><img width="900" height="600" src="img/galerija-luk-trojka-sm.jpg" alt="Troje prijatelja ispod luka" loading="lazy"></a>
-        <a href="img/galerija-rekviziti-5.jpg" class="m-item reveal"><img width="900" height="600" src="img/galerija-rekviziti-5-sm.jpg" alt="Prijatelji s natpisom Bliže šanku" loading="lazy"></a>
-        <a href="img/galerija-luk-ekipa-3.jpg" class="m-item reveal"><img width="900" height="600" src="img/galerija-luk-ekipa-3-sm.jpg" alt="Društvo poziraju ispod luka" loading="lazy"></a>
-        <a href="img/galerija-rekviziti-6.jpg" class="m-item reveal"><img width="900" height="600" src="img/galerija-rekviziti-6-sm.jpg" alt="Gosti s kapom i mikrofonom" loading="lazy"></a>
-        <a href="img/backdrop-luk-mladenci.jpg" class="m-item reveal"><img width="507" height="900" src="img/backdrop-luk-mladenci-sm.jpg" alt="Mladenci se ljube ispod luka" loading="lazy"></a>
-        <a href="img/galerija-luk-djevojke.jpg" class="m-item reveal"><img width="900" height="600" src="img/galerija-luk-djevojke-sm.jpg" alt="Djevojke slave ispod luka" loading="lazy"></a>
+        <a href="img/galerija-luk-ekipa-2.webp" class="m-item reveal"><img width="900" height="600" src="img/galerija-luk-ekipa-2-sm.webp" alt="Veselo društvo ispod cvjetnog luka" loading="lazy"></a>
+        <a href="img/galerija-rekviziti-2.webp" class="m-item reveal"><img width="900" height="600" src="img/galerija-rekviziti-2-sm.webp" alt="Prijatelji s natpisima i naočalama" loading="lazy"></a>
+        <a href="img/galerija-luk-par.webp" class="m-item reveal"><img width="900" height="600" src="img/galerija-luk-par-sm.webp" alt="Par u zagrljaju ispod luka" loading="lazy"></a>
+        <a href="img/galerija-mladozenja.webp" class="m-item reveal"><img width="900" height="600" src="img/galerija-mladozenja-sm.webp" alt="Mladoženja s prijateljima" loading="lazy"></a>
+        <a href="img/galerija-glazbenici.webp" class="m-item reveal"><img width="900" height="600" src="img/galerija-glazbenici-sm.webp" alt="Glazbenici s instrumentima ispod luka" loading="lazy"></a>
+        <a href="img/galerija-rekviziti-3.webp" class="m-item reveal"><img width="900" height="600" src="img/galerija-rekviziti-3-sm.webp" alt="Četvero prijatelja s rekvizitima" loading="lazy"></a>
+        <a href="img/galerija-luk-mladenka.webp" class="m-item reveal"><img width="900" height="600" src="img/galerija-luk-mladenka-sm.webp" alt="Mladenka s prijateljima ispod luka" loading="lazy"></a>
+        <a href="img/galerija-obitelj.webp" class="m-item reveal"><img width="900" height="600" src="img/galerija-obitelj-sm.webp" alt="Obitelj s natpisom Štaje tuje" loading="lazy"></a>
+        <a href="img/galerija-rekviziti-4.webp" class="m-item reveal"><img width="900" height="600" src="img/galerija-rekviziti-4-sm.webp" alt="Gosti s klapom i šeširima" loading="lazy"></a>
+        <a href="img/galerija-luk-trojka.webp" class="m-item reveal"><img width="900" height="600" src="img/galerija-luk-trojka-sm.webp" alt="Troje prijatelja ispod luka" loading="lazy"></a>
+        <a href="img/galerija-rekviziti-5.webp" class="m-item reveal"><img width="900" height="600" src="img/galerija-rekviziti-5-sm.webp" alt="Prijatelji s natpisom Bliže šanku" loading="lazy"></a>
+        <a href="img/galerija-luk-ekipa-3.webp" class="m-item reveal"><img width="900" height="600" src="img/galerija-luk-ekipa-3-sm.webp" alt="Društvo poziraju ispod luka" loading="lazy"></a>
+        <a href="img/galerija-rekviziti-6.webp" class="m-item reveal"><img width="900" height="600" src="img/galerija-rekviziti-6-sm.webp" alt="Gosti s kapom i mikrofonom" loading="lazy"></a>
+        <a href="img/backdrop-luk-mladenci.webp" class="m-item reveal"><img width="507" height="900" src="img/backdrop-luk-mladenci-sm.webp" alt="Mladenci se ljube ispod luka" loading="lazy"></a>
+        <a href="img/galerija-luk-djevojke.webp" class="m-item reveal"><img width="900" height="600" src="img/galerija-luk-djevojke-sm.webp" alt="Djevojke slave ispod luka" loading="lazy"></a>
       </div>
     </section>
 
     <section class="quote">
-      <img src="img/backdrop-thats-amore-sm.jpg" width="900" height="900" alt="Neonski natpis That's Amore na cvjetnom luku" class="quote__img reveal" loading="lazy">
+      <img src="img/backdrop-thats-amore-sm.webp" width="900" height="900" alt="Neonski natpis That's Amore na cvjetnom luku" class="quote__img reveal" loading="lazy">
       <blockquote class="reveal">
         <p>„Najljepše fotografije s vjenčanja nisu one pozirane, nego one na kojima se svi smiju.”</p>
         <cite>Gran Vía Studio</cite>

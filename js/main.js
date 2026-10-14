@@ -19,6 +19,10 @@
   toggle.addEventListener('click', function () { setMenu(menu.hidden); });
   menu.addEventListener('click', function (e) { if (e.target.closest('a')) setMenu(false); });
 
+  var hero = document.querySelector('.hero');
+  if (document.readyState === 'complete') hero.classList.add('is-loaded');
+  else window.addEventListener('load', function () { hero.classList.add('is-loaded'); });
+
   var slides = document.querySelectorAll('.hero__slide');
   var current = 0;
   if (slides.length > 1 && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
