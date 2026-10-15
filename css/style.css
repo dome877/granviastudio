@@ -192,11 +192,11 @@ body.menu-open .site-header { color: var(--ink); background: var(--paper); }
 .hero--page { height: 78vh; height: 78svh; min-height: 520px; }
 .hero__slide--pb { background-image: url(../img/photobooth-rekviziti-1.webp); background-position: center 30%; }
 .hero__slide--bd { background-image: url(../img/galerija-luk-par.webp); background-position: 70% 40%; }
-.hero__slide--ps { background-image: url(../img/galerija-luk-mladenka.webp); background-position: center 35%; }
+.hero__slide--ps { background-image: url(../img/backdrop-cvjetni-luk.webp); background-position: center 16%; }
 @media (max-width: 760px) {
   .hero__slide--pb { background-image: url(../img/photobooth-rekviziti-1-m.webp); }
   .hero__slide--bd { background-image: url(../img/galerija-luk-par-m.webp); }
-  .hero__slide--ps { background-image: url(../img/galerija-luk-mladenka-m.webp); }
+  .hero__slide--ps { background-image: url(../img/backdrop-cvjetni-luk-m.webp); }
   .hero__slide--1 { background-image: url(../img/hero-luk-ekipa-m.webp); }
   .hero.is-loaded .hero__slide--2 { background-image: url(../img/backdrop-welcome-m.webp); }
   .hero.is-loaded .hero__slide--3 { background-image: url(../img/galerija-luk-djevojke-m.webp); }
@@ -426,6 +426,15 @@ body.menu-open .site-header { color: var(--ink); background: var(--paper); }
 .compare__col h3 { font-family: var(--serif); font-weight: 400; font-size: clamp(26px, 2.6vw, 34px); margin: 0; }
 .compare__col .features { margin: 20px 0 28px; }
 @media (max-width: 760px) { .compare__grid { grid-template-columns: 1fr; } }
+.compare__sketch { display: block; width: 100%; max-width: 480px; height: auto; margin: 0 0 24px; overflow: visible; }
+.compare__sketch .k { fill: var(--ivory); stroke: var(--ink); stroke-width: 1.3; stroke-linecap: round; stroke-linejoin: round; }
+.compare__sketch .a { fill: var(--ivory); stroke: var(--accent); stroke-width: 1.2; }
+.compare__sketch .n { fill: none; stroke: var(--accent); stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
+.compare__sketch .v { fill: none; stroke: var(--accent); stroke-width: 1; stroke-dasharray: 2 5; stroke-linecap: round; }
+.compare__sketch .d { stroke-dasharray: 5 4; }
+.compare__sketch .g { fill: none; stroke: var(--line); stroke-width: 1.3; }
+.compare__sketch .t { fill: none; stroke: var(--muted); stroke-width: .8; }
+.compare__sketch text { font-family: var(--sans); font-size: 14px; font-weight: 500; letter-spacing: .12em; fill: var(--muted); text-anchor: middle; }
 .about__cities a { text-decoration: none; border-bottom: 1px solid var(--line); }
 .about__cities a:hover { border-bottom-color: currentColor; }
 .cta__actions { display: flex; gap: 32px; justify-content: center; align-items: center; flex-wrap: wrap; }
